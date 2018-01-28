@@ -1,0 +1,61 @@
+//CSS for all form elements
+
+button.remove {
+  .button-icons;
+}
+
+h2.section-title {
+  .countify-title;
+}
+
+.btn-action {
+  background-color: @action-color;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  &:hover {
+    background-color: darken(@action-color, 15%);
+  }
+  &:active {
+    background-color: darken(@action-color, 30%);
+  }
+}
+
+.form-container {
+  position: relative;
+  margin: 0 auto;
+  width: 950px;
+
+
+  @import 'form/0_selectable';
+  @import 'form/1_uploadable';
+  @import 'form/2_languages';
+ 
+  .tone-and-urgent {
+    margin: 62px 0;
+    display: flex;
+
+    .left-block {
+      width: 50%;
+
+      @import 'form/3_tone';
+    }
+    .right-block {
+      flex-grow: 100;
+
+      @import 'form/4_urgent';
+    }
+  }
+
+  @import 'form/5_payment';
+
+
+  }
+
+
+
+
+  
+
+
+
