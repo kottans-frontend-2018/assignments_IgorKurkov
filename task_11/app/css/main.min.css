@@ -275,8 +275,8 @@ table {
 .countify-title:before {
   counter-increment: section;
   content: counter(section);
+  line-height: 2.7em;
   left: -16px;
-  top: 7px;
   color: #A5ABC5;
   font-size: 17px;
   font-weight: 500;
@@ -300,6 +300,7 @@ table {
   /* url("../fonts/OpenSans-Regular-webfont.woff") format("woff"); */
 }
 body {
+  width: 100%;
   background-color: #eceef4;
   padding-top: 4rem;
   font-family: 'ProximaNova';
@@ -422,7 +423,7 @@ button:hover {
   margin-right: 10px;
 }
 #container main .order-section .order-summary.left table {
-  width: 80%;
+  width: 70%;
   padding: 53px 0 0 35px;
   text-align: left;
   top: 53px;
@@ -451,10 +452,12 @@ button:hover {
   width: 30%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 30px;
+  padding: 0 0 0 20px;
 }
 #container main .order-section .order-summary.left .actions-right .button {
-  min-width: 180px;
+  min-width: 170px;
+  height: 55px;
+  padding: 0;
   margin-bottom: 10px;
   font-size: 12px;
   letter-spacing: 0.08em;
@@ -544,8 +547,8 @@ button:hover {
 #container main h2.section-title:before {
   counter-increment: section;
   content: counter(section);
+  line-height: 2.7em;
   left: -16px;
-  top: 7px;
   color: #A5ABC5;
   font-size: 17px;
   font-weight: 500;
@@ -594,6 +597,7 @@ button:hover {
   width: 280px;
   border: 1px solid #D6DCE8;
   border-radius: 3px;
+  border-radius: 6px;
 }
 #container main .form-container section.selectable .flex-container .select-type input {
   position: absolute;
@@ -750,8 +754,8 @@ button:hover {
 #container main .form-container section.languages h2.section-title:before {
   counter-increment: section;
   content: counter(section);
+  line-height: 2.7em;
   left: -16px;
-  top: 7px;
   color: #A5ABC5;
   font-size: 17px;
   font-weight: 500;
@@ -922,6 +926,7 @@ button:hover {
   margin: 10px;
   border: 1px solid #D6DCE8;
   border-radius: 3px;
+  border-radius: 6px;
 }
 #container main .form-container .tone-and-urgent .left-block section.tone .flex-container .select-tone input {
   position: absolute;
@@ -1136,6 +1141,7 @@ button:hover {
   margin: 10px 20px;
   border: 1px solid #D6DCE8;
   border-radius: 3px;
+  border-radius: 6px;
 }
 #container main .form-container section.payment .flex-container .select-payment input {
   position: absolute;
