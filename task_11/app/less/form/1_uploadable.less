@@ -1,0 +1,73 @@
+section.uploadable {
+  // padding-top: 55px;
+  padding: 55px 0;
+  small {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  
+  /* https://codepen.io/adambene/pen/xRWrXN */
+  .upload-btn-wrapper {
+    padding: 52px 0 0 35px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    
+    button.upload {
+      display: block;
+      width: 100%;
+      text-transform: inherit;
+      font-size: 17px;
+      letter-spacing: -0.04em;
+      background-color: @main-gray-color;
+      &:hover {
+        color: @main-gray-color;
+      }
+      .fa {
+        margin-right: 12px;
+      }
+    }
+    input#upload {
+      width: 100%;
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+  }
+  .table-wrapper {
+    .border-and-radius;
+    margin: 35px 10px 0 35px;
+
+  }
+  table.uploaded-files-table {
+    width: 95%;
+    margin: 30px 45px 25px 45px;
+    thead {
+      tr {
+        text-align: left;
+        th {
+          padding: 0 0 12px 0;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0.08em;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 8px 0;
+          .fa {
+            margin-right: 19px;
+          }
+          button.remove {
+            .button-icons;
+          }
+        }
+      }
+    }
+  }
+}

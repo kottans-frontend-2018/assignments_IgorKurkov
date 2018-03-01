@@ -1,0 +1,53 @@
+@import (less) 'inc/_resetCss.css';
+@import 'inc/_vars';
+@import 'inc/_mixins';
+@import 'inc/_fonts';
+
+body {
+  width: 100%;
+  background-color: @body-color;
+  padding-top: 4rem;
+  font-family: 'ProximaNova';
+  color : @font-color;
+  counter-reset: section;
+}
+.logo {
+  img {
+    opacity: .1;
+    width: 100px;
+    height: auto;
+    &:hover {
+      opacity: .2;
+    }
+    &:active {
+      opacity: .3;
+    }
+  }    
+} 
+input, button {
+  cursor: pointer;
+  &:hover {
+    background-color: @border-color-light;
+  }
+}
+
+.button {
+  .button-regular;
+}
+
+
+
+#container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+
+  @import '_header';
+
+  main {
+    .border-and-radius;
+    @import '_order-section';
+    @import '_form';
+  }
+}
+@import '_footer';
